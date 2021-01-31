@@ -1,0 +1,24 @@
+name: kfo
+channels:
+    - pytorch
+    - intel
+    - conda-forge
+    - anaconda
+dependencies:
+    - python=3.7.3
+    - pip
+    - mkl=2020.4
+    - numpy=1.19.5
+    - cudatoolkit=10.2
+    - pytorch=1.7.1
+    - torchvision=0.8.2
+    - accimage
+    - opencv=3.4.2
+    - cython=0.29.21
+    - pip:
+        - wandb
+        - typer
+        - gnureadline
+        - tqdm
+        - pyparsing
+        - '--editable=git+https://github.com/learnables/learn2learn.git#egg=learn2learn'
